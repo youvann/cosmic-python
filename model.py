@@ -3,13 +3,13 @@ from datetime import date
 from typing import Optional, Set, List
 
 
-@dataclass(frozen=True)
+@dataclass(unsafe_hash=True)
 class OrderLine:
     """
     OrderLine is a value object
     """
 
-    orderid: str
+    order_id: str
     sku: str
     qty: int
 

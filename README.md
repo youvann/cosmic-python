@@ -17,4 +17,6 @@ pip install -r requirements.txt
     + unlike values, entities have **identity equality**
     + their values can changes and they are still recognizably the same thing
     + ex : Batch
-* Domain services : Domain services are not the same thing as the services from the service layer, although they are often closely related. A domain service represents a business concept or process, whereas a service-layer service represents a use case for your application. Often the service layer will call a domain service. 
+* Domain services : Domain services are not the same thing as the services from the service layer, although they are often closely related. A domain service represents a business concept or process, whereas a service-layer service represents a use case for your application. Often the service layer will call a domain service.
+* Dependency Inversion Principle : High level modules (the domain) should not depend on low levels (the infrastructure)
+* Repository pattern :   

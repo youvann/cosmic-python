@@ -15,7 +15,7 @@ def make_batch_and_line(sku, batch_qty, line_qty):
 def test_allocating_to_a_batch_reduces_the_available_quantity():
     # given
     batch = Batch(ref="batch_001", sku="table_A", qty=20, eta=date.today())
-    order_line = OrderLine(orderid="order_ref", sku="table_A", qty=2)
+    order_line = OrderLine(order_id="order_ref", sku="table_A", qty=2)
 
     # when
     batch.allocate(order_line)
@@ -45,7 +45,7 @@ def test_allocate_if_available_equal_to_required():
 
 def test_cannot_allocate_if_skus_does_not_match():
     batch = Batch(ref="batch-001", sku="CHAIR", qty=2, eta=None)
-    different_sku_line = OrderLine(orderid="order-123", sku="toaster", qty=1)
+    different_sku_line = OrderLine(order_id="order-123", sku="toaster", qty=1)
     assert batch.can_allocate(different_sku_line) is False
 
 
