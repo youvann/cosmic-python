@@ -2,9 +2,9 @@ from typing import Set
 
 import pytest
 
-import model
-import services
-from repository import AbstractRepository
+from domain import model
+from service_layer import services
+from adapters.repository import AbstractRepository
 
 
 class FakeRepository(AbstractRepository):

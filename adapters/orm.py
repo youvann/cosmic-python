@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String, MetaData, Table, Date
 from sqlalchemy.orm import mapper, relationship
 
-import model
+from domain import model
 
 metadata = MetaData()
 
