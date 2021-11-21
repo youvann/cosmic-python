@@ -1,3 +1,6 @@
 sqlalchemy
 pytest
 black
+requests
+psycopg2-binary
+flask
