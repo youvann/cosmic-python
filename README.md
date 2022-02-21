@@ -21,3 +21,11 @@ pip install -r requirements.txt
 * Dependency Inversion Principle : High level modules (the domain) should not depend on low levels (the infrastructure)
 * Repository pattern : a simplifying abstraction over data storage, allowing us to decouple our model layer from the data layer
 * Service layer pattern : take care of orchestrating our workflows and defining the use cases of our system
+
+### Chapter 5
+
+> Tests are supposed to help us change our system fearlessly, but often we see teams writing too many tests against their domain model. This causes problems when they come to change their codebase and find that they need to update tens or even hundreds of unit tests.
+
+> Every line of code that we put in a test is like a blob of glue, holding the system in a particular shape. The more low-level tests we have, the harder it will be to change things.
+
+> Express your service layer in terms of primitives rather than domain objects.
